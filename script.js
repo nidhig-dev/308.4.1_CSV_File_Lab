@@ -62,11 +62,13 @@ for (let i= 0; i < parentArr.length;i++) {
     finalobj = {};
 
 }
-// console.log(parentArr);
+// The orginal array
+console.log("The original array-------------",parentArr);
 
 // Removing last element from the array
 parentArr.pop();
-// console.log(parentArr);
+
+console.log("Last Object removed from array------------",parentArr);
 
 // Adding new objext at index 1
 let newObj={};
@@ -76,7 +78,7 @@ newObj.occupation="Runner";
 newObj.age="25";
 
 parentArr.splice(1, 0,newObj);
-// console.log(parentArr);
+console.log("Added new object at index 1--------------",parentArr);
 
 // Add new object to the end of array
 newObj={};
@@ -85,7 +87,8 @@ newObj.name = "Bilbo";
 newObj.occupation = "None";
 newObj.age = "111";
 parentArr.push(newObj);
-console.log(parentArr);
+
+console.log("Added new object to the end of the array---------------",parentArr);
 
 //average Age of the group. .
 
